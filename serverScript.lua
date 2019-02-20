@@ -1,0 +1,5 @@
+game.Players.PlayerAdded:connect(function(plr)
+	plr.CharacterAdded:connect(function(char)
+		char:WaitForChild('Humanoid'):AddAccessory(game.ReplicatedStorage.ClassyTophat)
+	end)
+end)
